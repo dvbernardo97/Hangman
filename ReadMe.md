@@ -10,7 +10,7 @@
 ![Hang man wireframe](img/hangmanimg.png)
 
 ### PseudoCode
-1. Set Container
+<!-- 1. Set Container
     1.1 format container to a box to be able to put my game inside
     1.2 set an outside container to display a message (if possible)
     1.3 display message to start game by clicking a letter
@@ -29,5 +29,4 @@
 3. Bank
     3.1 create word bank to hold the words
     3.2 create option to choose between anime and cartoon characters(optional)
-    3.3 connect bank to formating so that they can choose word at random from the bank
-    
+    3.3 connect bank to formating so that they can choose word at random from the bank -->
