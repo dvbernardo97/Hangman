@@ -1,18 +1,18 @@
 // creating a word bank
 const wordBank = ['twix', 'snickers', 'skittles']
-// pickRandom.setAttribute( wordBank[random]) {
-//     return pickRandom
-// }
+
 function getRandomInt(max) {
     return Math.floor(Math.random() * max);
 }
-
 const randomIndex = getRandomInt(wordBank.length)
 
 let word = wordBank[randomIndex]
-// keyclick interaction/event listener
 
-// word display
-// number of lines for the word
-// showing which letters where picked
-// set containers for all these options
+// replace each letter with an underscore
+    // figure out how many letters are in the word
+    // display that number of underscores
+
+// keyclick interaction/event listener
+    //  showing which letters where picked
+    // if letter is wrong display and present a body part
+    //if letter is right replace dash with the letter
