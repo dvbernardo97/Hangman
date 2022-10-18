@@ -22,7 +22,10 @@ let word = wordBank[randomIndex]
 wordGrab.innerHTML = "____ ".repeat(word.length)
 
 // how many letters remain to be guessed
-
+function pInput(e) {
+    let key = e.target.value
+    console.log(key)
+}
 // figure out how many letters are in the word
 // display that number of underscores
 
@@ -41,4 +44,5 @@ wordGrab.innerHTML = "____ ".repeat(word.length)
 // reset button
 resetbtn.addEventListener('click', wordBank)
 document.addEventListener('keydown', () => typingInput.focus())
-guessBtn.addEventListener('click', () => console.log(typingInput.value))
+typingInput.addEventListener("input", pInput)
+// guessBtn.addEventListener('click', () => console.log(typingInput.value))
