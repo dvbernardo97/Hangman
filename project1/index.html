@@ -21,33 +21,26 @@
 </head>
 
 <body>
-    <div class="container text-center">
-        <div class="row justify-content-md-center">
-            <div class="col col-lg-2" style="border:3px  solid black">
-                It's Hangman! Can you guess the word?
+    <div class="container">
+        <h1> Hangman can you guess the word?</h1>
+        <div class="content">
+
+            <div class="inputs" id="word">
+                <input type="text" class="typing-input">
+                <input type="text" disabled>
+                <input type="text" disabled>
+                <input type="text" disabled>
+                <input type="text" disabled>
+                <input type="text" disabled>
             </div>
+            <div class="details">
+                <p class="hint">Hint: <span></span></p>
+                <input type="text" class="typing-input" maxlength="1"><button>Guess?</button>
+                <p class="Guesses"> Remaining Guesses: <span> #</span></p>
+                <p class="Wrong">Wrong Letters: <span> a,b,c,d</span></p>
+            </div>
+            <button class="resetbttn">Reset</button>
         </div>
-        <div class="col-md-auto">
-            Hint:
-        </div>
-        <div class="col col-lg-2" sytle="border: 2px solid black">
-            *spot for the hang man
-        </div>
-    </div>
-    <div class="row">
-        <div class="col">
-            *spot for the word
-        </div>
-        <div class="col-md-auto">
-            Possibly spot for the display of used letters
-        </div>
-        <div class="col col-lg-2">
-            ? keyboard?
-        </div>
-    </div>
-    </div>
-
-
 </body>
 
 </html>
