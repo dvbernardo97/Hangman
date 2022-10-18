@@ -24,7 +24,14 @@ wordGrab.innerHTML = "____ ".repeat(word.length)
 // how many letters remain to be guessed
 function pInput(e) {
     let key = e.target.value
-    console.log(key)
+    if (key.match(/^[A-Za-z]+$/)) {
+        console.log(key)
+        if (word.includes(key)) {
+            for (word[i] === key) 
+        } else {
+            console.log("letter not found")
+        }
+    }
 }
 // figure out how many letters are in the word
 // display that number of underscores
