@@ -37,24 +37,29 @@ body {
 }
 
 .inputs input {
-    height: 50px;
-    width: 10 px;
-    margin: 3px;
+    height: 57px;
+    width: 56px;
+    margin: 4px;
     font-size: 24px;
     font-weight: 500px;
     background: white;
     border: 1px solid whitesmoke;
 }
 
+.inputs input:first-child {
+    margin-left: 0px;
+}
 
 .content .details {
     margin: 20px 0px 25px;
 }
 
+
 .details p {
     font-size: 19px;
     margin-bottom: 10p;
 }
+
 
 .content .resetbttn {
     width: 100%;
