@@ -18,6 +18,7 @@ const randomIndex = getRandomInt(wordBank.length)
 
 let word = wordBank[randomIndex]
 
+// figure out how many letters are in the word
 let box = ""
 for (let i = 0; i < word.length; i++) {
     box += '<input type="text" disabled>';
@@ -43,12 +44,6 @@ function pInput(e) {
     }
     incorrect.innerText = wrong
 }
-// // // figure out how many letters are in the word
-// // // display that number of underscores
-
-
-
-
 
 // // //  showing which letters where picked
 
