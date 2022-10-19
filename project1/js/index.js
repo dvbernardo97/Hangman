@@ -1,15 +1,16 @@
 // Get elements
 const inputs = document.querySelector(".inputs")
-// const wordGrab = document.getElementById('word')
+const incorrect = document.querySelector(".wrong")
 const resetbtn = document.querySelector('.resetbttn')
 const hint = document.querySelector('.hint span')
 const typingInput = document.querySelector('.typing-input')
 const guessBtn = document.querySelector('.guessBttn')
-
+let wrong = []
 // creating a word bank
 
 const wordBank = ['twix', 'snickers', 'skittles']
 //  displaying word from the word bank
+
 function getRandomInt(max) {
     return Math.floor(Math.random() * max);
 }
@@ -23,11 +24,6 @@ for (let i = 0; i < word.length; i++) {
 }
 inputs.innerHTML = box, word.length;
 
-// random();
-
-// // replace each letter with an underscore
-
-// inputs.innerText = "__ ".repeat(word.length, box)
 
 // // // how many letters remain to be guessed
 function pInput(e) {
@@ -41,26 +37,29 @@ function pInput(e) {
                 }
             }
         } else {
-            console.log("letter not found")
+            // if letter is wrong display and present a body part
+            wrong.push(key)
         }
     }
+    incorrect.innerText = wrong
 }
 // // // figure out how many letters are in the word
 // // // display that number of underscores
 
-// // // keyclick interaction/event listener
+
 
 
 
 // // //  showing which letters where picked
-// // // if letter is wrong display and present a body part
+
 // // //if letter is right replace dash with the letter
 
 
 // // // Winning and losing functions
 // // //how to determine the winner
 // // // how to determine the loser
-// // // reset button
-resetbtn.addEventListener('click', getRandomInt)
+
+// keyclick interaction/event listener
+resetbtn.addEventListener('click', getRandomInt) // reset button
 document.addEventListener('keydown', () => typingInput.focus())
 guessBtn.addEventListener("click", pInput)
