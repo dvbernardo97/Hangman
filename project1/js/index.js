@@ -15,7 +15,7 @@ const congrats = 'congrats you won'
 const again = 'Sorry, try again'
 // creating a word bank
 
-const wordBank = ['twix', 'snickers', 'skittles']
+const wordBank = ['inuyasha', 'ichigo', 'luffy', 'lelouch', 'goku', 'naruto', 'sauske', 'rukia', 'zoro', 'sanji', 'usopp', 'nami', 'krillin', 'gohan', 'piccolo']
 //  displaying word from the word bank
 
 function getRandomInt(max) {

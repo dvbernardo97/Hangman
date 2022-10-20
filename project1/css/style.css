@@ -6,16 +6,17 @@
 }
 
 body {
+    background-image: url("https://i.pinimg.com/originals/55/3f/e5/553fe53b96e0232e45ecb5094f4294a0.jpg");
+    background-size: 500px 500px;
     display: flex;
     align-items: center;
     justify-content: center;
     min-height: 100vh;
-    background: lightskyblue;
 }
 
 .container {
     width: 430px;
-    background: seagreen;
+    background: gray;
     border-radius: 10px;
 }
 
