@@ -6,9 +6,12 @@ const hint = document.querySelector('.hint span')
 const guessLeft = document.querySelector('.guesses span')
 const typingInput = document.querySelector('.typing-input')
 const guessBtn = document.querySelector('.guessBttn')
+const won = document.querySelector('.won')
+const loss = document.querySelector('.loss')
 let wrong = []
 let guesses = []
 let correct = []
+const congrats = 'congrats you won'
 // creating a word bank
 
 const wordBank = ['twix', 'snickers', 'skittles']
@@ -28,6 +31,10 @@ for (let i = 0; i < word.length; i++) {
 }
 inputs.innerHTML = box, word.length;
 guessLeft.innerText = guesses
+
+const onReset = function (reset) {
+
+}
 
 // how many letters remain to be guessed
 function pInput(e) {
@@ -53,9 +60,9 @@ function pInput(e) {
     incorrect.innerText = wrong
     // Winning and losing functions
     if (correct.length === word.length) {
-        Window.open("Congratulations you found the word!!")
+        won.innerText = congrats
     } else if (guesses < 1) {
-        alert("Game Over! No more guesses")
+        loss.textContent = 'Sorry, try again'
         for (let i = 0; i < word.length; i++) {
             inputs.querySelectorAll("input")[i].value = word[i]
         }
@@ -67,6 +74,6 @@ function pInput(e) {
 // how to determine the loser
 
 // keyclick interaction/event listener
-resetbtn.addEventListener('click', getRandomInt) // reset button
+resetbtn.addEventListener('click', resetbtn) // reset button
 document.addEventListener('keydown', () => typingInput.focus())
 guessBtn.addEventListener("click", pInput)
