@@ -12,6 +12,7 @@ let wrong = []
 let guesses = []
 let correct = []
 const congrats = 'congrats you won'
+const again = 'Sorry, try again'
 // creating a word bank
 
 const wordBank = ['twix', 'snickers', 'skittles']
@@ -29,12 +30,12 @@ let box = ""
 for (let i = 0; i < word.length; i++) {
     box += '<input type="text" disabled>';
 }
-inputs.innerHTML = box, word.length;
-guessLeft.innerText = guesses
 
-const onReset = function (reset) {
-
+function resetText() {
+    inputs.innerHTML = box, word.length;
+    guessLeft.innerText = guesses
 }
+resetText()
 
 // how many letters remain to be guessed
 function pInput(e) {
@@ -56,24 +57,33 @@ function pInput(e) {
 
         }
     }
-    guessLeft.innerText = guesses
-    incorrect.innerText = wrong
     // Winning and losing functions
     if (correct.length === word.length) {
         won.innerText = congrats
     } else if (guesses < 1) {
-        loss.textContent = 'Sorry, try again'
+        loss.textContent = again
         for (let i = 0; i < word.length; i++) {
             inputs.querySelectorAll("input")[i].value = word[i]
         }
     }
+    function start() {
+        guessLeft.innerText = guesses
+        incorrect.innerText = wrong
+    }
+    start()
+
+}
+function reset() {
+    guesses = 8
+    resetText()
+    wrong = []
+    incorrect.innerText = wrong
+
 }
 
 
-//how to determine the winner
-// how to determine the loser
 
 // keyclick interaction/event listener
-resetbtn.addEventListener('click', resetbtn) // reset button
+resetbtn.addEventListener('click', reset) // reset button
 document.addEventListener('keydown', () => typingInput.focus())
 guessBtn.addEventListener("click", pInput)
