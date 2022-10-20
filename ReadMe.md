@@ -1,23 +1,25 @@
-# HangMan (Anime/Cartoon characters)
+# Guess the word (Anime/Cartoon characters)
 
 ## Background
 
--Game Choice: Hangman
+-Game Choice: Guess the word
     I wanted to choose a game that I thought would challenge me to the best of my abilites, and to add a little twist I chose to do anime and cartoon characters to add a little fun or twist to it.
 
 ## WireFrame
 
-![Hang man wireframe](img/hangmanimg.png)
+![Guess the word](img/Screenshot%202022-10-20%20145835.png)
 
 ### PseudoCode
+
+HTML file:
 1. Set Container
 
      1.1 format container to a box to be able to put my game inside<br>
      1.2 set an outside container to display a message (if possible)<br>
     1.3 display message to start game by clicking a letter<br>
     1.4 display blank lines to show how many letters are in the word<br>
-    1.5 set picture to were the hangman is going to appear
 
+Javascript:
 2. format
 
     2.1 everytime a wrong letter is picked display how many lives left till losing<br>
