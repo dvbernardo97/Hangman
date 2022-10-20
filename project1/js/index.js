@@ -8,6 +8,7 @@ const typingInput = document.querySelector('.typing-input')
 const guessBtn = document.querySelector('.guessBttn')
 let wrong = []
 let guesses = []
+let correct = []
 // creating a word bank
 
 const wordBank = ['twix', 'snickers', 'skittles']
@@ -37,6 +38,7 @@ function pInput(e) {
             for (let i = 0; i < word.length; i++) {
                 if (word[i] === key) {
                     inputs.querySelectorAll("input")[i].value = key
+                    correct.push(key)
                 }
             }
         } else {
@@ -49,15 +51,17 @@ function pInput(e) {
     }
     guessLeft.innerText = guesses
     incorrect.innerText = wrong
-
-    if (guesses < 1) {
+    // Winning and losing functions
+    if (correct.length === word.length) {
+        Window.open("Congratulations you found the word!!")
+    } else if (guesses < 1) {
         alert("Game Over! No more guesses")
         for (let i = 0; i < word.length; i++) {
             inputs.querySelectorAll("input")[i].value = word[i]
         }
     }
 }
-// Winning and losing functions
+
 
 //how to determine the winner
 // how to determine the loser
