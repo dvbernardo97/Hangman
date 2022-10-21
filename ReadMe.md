@@ -38,3 +38,11 @@ Javascript:
     3.1 create word bank to hold the words<br>
     3.2 create option to choose between anime and cartoon characters(optional)<br>
     3.3 connect bank to formating so that they can choose word at random from the bank<br>
+
+
+
+Future updates
+1. Set picture to show about which character was chosen.
+2. bold out and center the letters better
+3. add longer names and last names to the characters
+4. connect the hint to the charcter so the hint changes depending on the word
