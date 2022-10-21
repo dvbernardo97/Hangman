@@ -8,6 +8,8 @@
 ## WireFrame
 
 ![Guess the word](img/Screenshot%202022-10-20%20145835.png)
+
+
 Technologies used:
 HTM:, Javascript, CSS
 
