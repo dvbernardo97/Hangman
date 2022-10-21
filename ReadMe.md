@@ -11,7 +11,9 @@
 
 
 Technologies used:
-HTM:, Javascript, CSS
+HTML
+Javascript
+CSS
 
 ### PseudoCode
 
